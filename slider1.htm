@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+
+
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+
+            var k = ["red", "green", "blue"];
+
+            $("#btn").click(function(){
+
+                $("#p1").css("color", k[0]);
+
+
+            });
+
+
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <style type="text/css">
+
+        .seg1{
+            height: 120px;
+            background-color: brown;
+        }
+
+        .seg2{
+            height: 580px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content:flex-end;
+
+        }
+
+
+        .seg2 button{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: solid thin grey;
+            margin-top: 210px;
+            box-shadow: 0px 0px 10px grey;
+            
+        }
+
+
+
+
+
+
+
+    
+    </style>
+        
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-12 seg1" id="segment1"></div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 seg2">
+
+                <p id="p1">Hello</p>
+
+                <button id="#btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>

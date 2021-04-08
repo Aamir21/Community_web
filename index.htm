@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">  
+
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Advent+Pro|Alfa+Slab+One|Anton|Archivo+Narrow|Baloo+2|Baloo+Chettan+2|Bellota|BenchNine|Caveat|Cinzel|Comfortaa|Concert+One|Cookie|Damion|Dancing+Script|Dosis|Electrolize|Fredoka+One|Great+Vibes|Indie+Flower|Inter|Josefin+Sans|Josefin+Slab|Kaushan+Script|Lato|Lobster|Luckiest+Guy|Monoton|Montserrat|Open+Sans|Oswald|Oxanium|PT+Sans+Caption|Pacifico|Parisienne|Passion+One|Poiret+One|Poppins|Quattrocento+Sans|Raleway|Righteous|Roboto+Mono|Sacramento|Satisfy|Sen|Source+Sans+Pro|Spartan|Titillium+Web|Ubuntu|Ultra|Yellowtail&display=swap" rel="stylesheet">
+        
+    
+        <meta name="viewport" width="device-width , initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <script src="index.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.2/jspdf.min.js"></script>	
+
+        <script>
+
+            $(document).ready(function(){
+
+                x1 = document.getElementById("feedback1").style.color;
+                x2 = document.getElementById("feedback1").style.color;
+                x3 = document.getElementById("feedback1").style.color;
+
+                var xyz = [x1="gold",x2="goldenrod",x3="orange"];
+
+                var i=0;
+
+                $("#next").click(function(){
+
+                    $("#name1").css("color",xyz[i]);
+                    //$("#name2").css("color",xyz[i]);
+                    //$("#name3").css("color",xyz[i]);
+
+                    i++;
+
+                    if(i>2){
+                        i=0;
+                    }
+
+                });
+
+
+                $("#r1").click(function(){
+
+                    //alert("Heiii");
+
+                    var doc = new jsPDF();
+
+                    doc.setTextColor(20,15,35);
+                    doc.text(100,10,'Hello world!');
+
+
+                    doc.setDrawColor(0.4,0.8,0.2);
+
+                    doc.text("Write a blog",15,20)
+                    doc.roundedRect(10,20, 190, 40, 3,3);
+
+                    doc.save('hello-world.pdf');
+
+
+
+
+
+                });
+
+
+
+
+
+            });
+
+            
+
+        </script>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+
+
+        
+
+
+
+        <div class="row">                               <!--Row1-->
+
+            <div class="col-md-9 seg1" id="segment1">
+
+                <img src="place_black_24dp.svg">
+
+                <ul id="ul1">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Seminar</li></a>
+                    <a href="#"><li>Member</li></a>
+                    <a href="#"><li>Contacts</li></a>
+
+                </ul>
+                <i class="fa fa-bars" id="hamburger" onclick="nav()"></i>
+
+               
+            </div>
+            <div class="col-md-3 seg1_2">
+                <p><a href="#">SignIn</a></p>
+                <button data-toggle="popover" title="hello" id="button1">SignUp</button>
+
+
+            </div>
+            
+
+        </div>
+
+
+        <div class="row">           <!--Row2-->
+
+            <blockquote class="col-md-7 seg2">
+                <p>" Amazing Creative!</p>
+
+            </blockquote>
+            <div class="col-md-5 seg2_2">
+                <p id="upcoming_p"><i class="fa fa-bookmark"></i>Upcoming Events</p>
+                <div class="col-sm-5">
+                    <p>Introduction to Python</p>
+                    <a><button id="r1">Apply</button></a>
+                </div>
+                <div class="col-sm-5">
+                    <p>Basics Of JavaScript</p>
+                    <a><button>Apply</button></a>
+                </div>
+
+            </div>
+
+
+
+            <!--
+
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="..." class="rounded me-2" alt="...">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+
+            -->
+
+
+
+        </div>
+
+        <div class="row">           <!--Row3-->
+
+            <div class="col-md-12 seg3">
+
+                <div class="col-md-7 seg3_board">
+                    <img src="graphic1.svg">
+                    <p><strong>" Follow</strong> Creativity and maintain existing skills with spread among others</p>
+                </div>
+
+                <div class="col-md-7 seg3_board">
+                    <img src="graphic1.svg">
+                    <p><strong>" Overcome</strong> Unemployment issue and begin your business!</p>
+                </div>
+
+
+                <p id="seg3_text">Apart from Entrepreneurship, setup your workspace!</p>
+
+            </div>
+
+        </div>
+        
+        <div class="row">               <!--Row4-->
+
+            <div class="col-md-12 seg4">            
+
+                <div class="col-md-3 feedback" id="feedback1">
+                    <img src="user-139.png">
+                    <p id="name1" class="name">Piyush Agarwal</p><br>
+                    <p id="location">Mumbai</p>
+                    
+                    
+                    <p id="statement">We are expecting great performance over big scenario. I admire it to be outstanding!</p>
+                   
+                </div>
+                <div class="col-md-3 feedback" id="feedback2">
+                    <img src="3135715.png">
+                    <p id="name2" class="name">Michael Smith</p><br>
+                    <p id="location">New York</p>
+                    
+                    
+                    <p id="statement">We are expecting great performance over big scenario. I admire it to be outstanding!</p>
+                </div>
+                <div class="col-md-3 feedback" id="feedback3">
+                    <img src="user-139.png">
+                    <p id="name3" class="name">Joseph John</p><br>
+                    <p id="location">Moscow</p>
+                    
+                    
+                    <p id="statement">We are expecting great performance over big scenario. I admire it to be outstanding!</p>
+                </div>
+
+                <section>
+                    <button id="pre"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    <button id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </section>
+
+
+                <p id="seg4_text">Follow us to get Additional Information!</p>
+
+            </div>
+
+        </div>
+
+        <div class="row">               <!--Row5-->
+
+            <div class="col-md-12 seg5">
+
+                <div class="col-md-2 social">
+                    <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                    <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                </div>
+
+                <div class="col-md-4 services">
+
+                    
+                    <ul>
+                        <h2>Services</h2>
+                        <hr>
+
+                        <li>Tools</li>
+                        <li>Components</li>
+                        <li>Driver</li>
+                        <li>Application</li>
+                        <li>Modules</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 downloads">
+
+                    
+                    <ul>
+                        <h2>Downloads</h2>
+                        <hr>
+
+                        <li>Tools</li>
+                        <li>Components</li>
+                        <li>Driver</li>
+                        <li>Application</li>
+                        <li>Modules</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
